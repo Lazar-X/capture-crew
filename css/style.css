@@ -1,0 +1,15 @@
+@font-face {
+	font-family: parisienne-regular;
+	src: url("../fonts/Parisienne-Regular.ttf");
+}
+@font-face {
+	font-family: lato-regular;
+	src: url("../fonts/Lato-Regular.ttf");
+}
+@font-face {
+	font-family: lato-italic;
+	src: url("../fonts/Lato-LightItalic.ttf");
+}
+:root {
+    --blue: #1e90ff; /* color: var(--blue); */
+}
