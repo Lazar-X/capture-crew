@@ -49,20 +49,20 @@
 }
 #hero-header-overlay {
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.7);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 #logo {
-	width: 70%;
+	width: 60%;
 	padding: 0px 10px;
 }
 #logo img {
 	width: 100px;
 }
 #hero-nav {
-	width: 30%;
+	width: 40%;
 }
 #hero-nav ul {
 	list-style-type: none;
@@ -135,7 +135,8 @@
 	text-align: center;
 	padding: 30px 20px;
 	background-color: var(--white);
-	outline: 1px solid var(--red);
+	/* outline: 1px solid var(--red); */
+	border-right: 1px solid var(--red);
 }
 .no-border-right {
 	border-right: 0px;
@@ -151,6 +152,13 @@
 	color: var(--black);
 	font-family: lato-regular;
 }
+.counter-block i {
+	padding: 1px;
+	background: rgb(244,67,54);
+	background-image: linear-gradient(45deg, rgba(244,67,54,1) 0%, rgba(33,150,243,1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
 #gallery {
 	width: 100%;
 	display: flex;
@@ -161,28 +169,58 @@
 #gallery-text {
 	width: 30%;
 	text-align: center;
-	border: 1px solid red;
-	height: 500px;
+	align-self: center;
 }
 #gallery-text h2 {
 	font-family: parisienne-regular;
 	font-size: 2.5em;
 	color: var(--red);
-	padding-bottom: 50px;;
+	padding-bottom: 50px;
 }
 #gallery-text p {
 	font-size: 1.125em;
 	padding-bottom: 30px;
 	font-family: lato-regular;
 }
+.padding-bottom-50 {
+	padding-bottom: 50px !important;
+}
 #gallery-photos {
-	width: 50%;
-	border: 1px solid red;
+	width: 60%;
+	display: flex;
+	justify-content: space-evenly;
+}
+.gallery-photos-holder {
+	width: 30%;
+	align-self: center;
 }
 #gallery-photos img {
-	width: 250px;
+	width: 100%;
+	padding: 10px;
 }
-
+#gallery-text a {
+	text-decoration: none;
+	font-size: 1.875em;
+	color: var(--black);
+	border: 1px solid var(--red);
+	padding: 10px 20px;
+	font-family: lato-italic;
+	text-transform: uppercase;
+}
+#about-contact {
+	width: 100%;
+	height: 500px;
+	display: flex;
+}
+.ac-class {
+	width: 50%;
+}
+#about {
+	background-color: var(--blue);
+}
+#contact {
+	background-color: var(--red);
+}
 #new {
 	width: 100%;
 	height: 100vh;
@@ -222,7 +260,29 @@
 	.counter-block {
 		padding: 30px 0px;
 	}
+	#gallery {
+		flex-direction: column;
+	}
+	#gallery-text {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	#gallery-text h2 {
+		padding-bottom: 30px;
+	}
+	#gallery-photos {
+		width: 100%;
+		flex-direction: column;
+	}
+	.gallery-photos-holder {
+		width: 45%;
+		display: flex;
+		align-self: auto;
+	}
+	.display-none {
+		display: none;
+	}
 }
 @media only screen and (max-width: 480px) {
-
+	
 }
