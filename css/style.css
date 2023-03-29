@@ -20,6 +20,7 @@
 	--gray: #E5E5E5;
 	--blue: #2196F3;
 	--red: #F44336;
+	--white: #FFFFFF;
 }
 * {
 	margin: 0px;
@@ -55,7 +56,7 @@
 }
 #logo {
 	width: 70%;
-	padding: 10px;
+	padding: 0px 10px;
 }
 #logo img {
 	width: 100px;
@@ -125,11 +126,66 @@
 	background-color: white;
 	border-radius: 10px;
 }
+#counter {
+	width: 100%;
+	display: flex;
+}
+.counter-block {
+	width: 100%;
+	text-align: center;
+	padding: 30px 20px;
+	background-color: var(--white);
+	outline: 1px solid var(--red);
+}
+.no-border-right {
+	border-right: 0px;
+}
+.counter-block h2 {
+	padding: 15px 0px;
+	font-size: 1.5625em;
+	color: var(--blue);
+	font-family: lato-italic;
+}
+.counter-block p, i {
+	font-size: 1.125em;
+	color: var(--black);
+	font-family: lato-regular;
+}
+#gallery {
+	width: 100%;
+	display: flex;
+	padding: 50px 0px;
+	justify-content: space-around;
+	background-color: var(--gray);
+}
+#gallery-text {
+	width: 30%;
+	text-align: center;
+	border: 1px solid red;
+	height: 500px;
+}
+#gallery-text h2 {
+	font-family: parisienne-regular;
+	font-size: 2.5em;
+	color: var(--red);
+	padding-bottom: 50px;;
+}
+#gallery-text p {
+	font-size: 1.125em;
+	padding-bottom: 30px;
+	font-family: lato-regular;
+}
+#gallery-photos {
+	width: 50%;
+	border: 1px solid red;
+}
+#gallery-photos img {
+	width: 250px;
+}
 
 #new {
 	width: 100%;
 	height: 100vh;
-	background-color: red;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -158,4 +214,15 @@
 	#toggle-button {
 		display: flex;
 	}
+}
+@media only screen and (max-width: 768px) {
+	#counter {
+		flex-direction: column;
+	}
+	.counter-block {
+		padding: 30px 0px;
+	}
+}
+@media only screen and (max-width: 480px) {
+
 }
