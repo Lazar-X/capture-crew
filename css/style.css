@@ -139,7 +139,7 @@
 	border-right: 1px solid var(--red);
 }
 .no-border-right {
-	border-right: 0px;
+	border-right: 0px !important;
 }
 .counter-block h2 {
 	padding: 15px 0px;
@@ -181,6 +181,7 @@
 	font-size: 1.125em;
 	padding-bottom: 30px;
 	font-family: lato-regular;
+	color: var(--black);
 }
 .padding-bottom-50 {
 	padding-bottom: 50px !important;
@@ -209,17 +210,45 @@
 }
 #about-contact {
 	width: 100%;
-	height: 500px;
+	background-image: url("../img/bg-image-02.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+#overlay-ac {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.9);
 	display: flex;
 }
 .ac-class {
 	width: 50%;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-right: 3px solid var(--blue);
 }
-#about {
-	background-color: var(--blue);
+.ac-class h2 {
+	font-family: parisienne-regular;
+	font-size: 2.5em;
+	color: var(--red);
+	padding: 50px 0px;
 }
-#contact {
-	background-color: var(--red);
+.ac-class p {
+	font-size: 1.125em;
+	padding-bottom: 100px;
+	font-family: lato-regular;
+	color: var(--gray);
+}
+.ac-class a {
+	text-decoration: none;
+	font-size: 1.875em;
+	color: var(--red);
+	border: 1px solid var(--red);
+	padding: 10px 20px;
+	font-family: lato-italic;
+	text-transform: uppercase;
 }
 #new {
 	width: 100%;
