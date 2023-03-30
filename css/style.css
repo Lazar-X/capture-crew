@@ -26,6 +26,9 @@
 	margin: 0px;
 	padding: 0px;
 }
+body {
+	line-height: 1.5;
+}
 #hero-section {
 	width: 100%;
 	height: 100vh;
@@ -49,7 +52,7 @@
 }
 #hero-header-overlay {
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: rgba(0, 0, 0, 0.9);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -91,6 +94,7 @@
 	font-size: 6.25em;
 	color: var(--gray);
 	font-family: lato-italic;
+	line-height: 1.2;
 }
 .color-gray {
 	color: var(--blue);
@@ -187,6 +191,15 @@
 .padding-bottom-50 {
 	padding-bottom: 50px !important;
 }
+#gallery-text a {
+	text-decoration: none;
+	font-size: 1.875em;
+	color: var(--black);
+	border: 1px solid var(--red);
+	padding: 10px 20px;
+	font-family: lato-italic;
+	text-transform: uppercase;
+}
 #gallery-photos {
 	width: 60%;
 	display: flex;
@@ -199,15 +212,6 @@
 #gallery-photos img {
 	width: 100%;
 	padding: 10px 0px;
-}
-#gallery-text a {
-	text-decoration: none;
-	font-size: 1.875em;
-	color: var(--black);
-	border: 1px solid var(--red);
-	padding: 10px 20px;
-	font-family: lato-italic;
-	text-transform: uppercase;
 }
 #about-contact {
 	width: 100%;
@@ -228,17 +232,18 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: space-between;
 	text-align: center;
 }
 .ac-class h2 {
 	font-family: parisienne-regular;
 	font-size: 2.5em;
 	color: var(--blue);
-	padding: 50px 0px;
+	padding-top: 50px;
 }
 .ac-class p {
 	font-size: 1.125em;
-	padding-bottom: 100px;
+	padding: 0px 70px;
 	font-family: lato-regular;
 	color: var(--gray);
 }
@@ -250,6 +255,7 @@
 	padding: 10px 20px;
 	font-family: lato-italic;
 	text-transform: uppercase;
+	margin-bottom: 20px;
 }
 .gradient-border {
 	width: 1px;
@@ -259,25 +265,28 @@
 footer {
 	width: 100%;
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	background-color: var(--gray);
+	justify-content: space-between;
+	
+	background-color: var(--white);
+	padding-bottom: 10px;
 }
 .footer-class {
+	width: 30%;
 	text-align: center;
 }
 .footer-class h3 {
 	font-size: 1.25em;
 	text-transform: uppercase;
 	font-family: lato-italic;
-	padding: 15px 0px;
-	color: var(--red)
+	padding: 20px 0px;
+	color: var(--blue)
 }
 .footer-class ul {
 	list-style-type: none;
 }
 .footer-class ul li {
-	padding-bottom: 10px;
+	padding-bottom: 15px;
+	font-family: lato-regular;
 }
 .footer-class ul li a {
 	text-decoration: none;
@@ -290,19 +299,17 @@ footer {
 }
 #copyright {
 	width: 100%;
-	height: 50px;
 	background-color: var(--black);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 #copyright p {
-	font-size: 1.25em;
-	color: var(--blue)
-}
-#new {
-	width: 100%;
-	height: 100vh;
+	font-size: 1em;
+	color: var(--blue);
+	font-family: lato-italic;
+	text-align: center;
+	padding: 20px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -357,7 +364,6 @@ footer {
 	#gallery-photos {
 		width: 100%;
 		flex-direction: column;
-		align-items: flex-start;
 	}
 	.gallery-photos-holder {
 		width: 100%;
@@ -379,6 +385,17 @@ footer {
 	.gradient-border {
 		width: 100%;
 		height: 1px;
+	}
+	footer {
+		justify-content: space-between;
+		flex-direction: column;
+	}
+	.footer-class {
+		width: 100%;
+	}
+	.footer-class ul {
+		display: flex;
+		justify-content: space-around;
 	}
 }
 @media only screen and (max-width: 480px) {
