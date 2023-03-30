@@ -72,11 +72,23 @@ body {
 	display: flex;
 	justify-content: space-around;
 }
+#hero-nav ul li {
+	width: 100%;
+	transition: 0.3s all;
+}
 #hero-nav ul li a {
 	text-decoration: none;
 	color: var(--gray);
 	font-size: 20px;
 	font-family: lato-italic;
+	transition: 0.3s all;
+}
+#hero-nav ul li a:hover {
+	color: var(--blue);
+}
+.active-link {
+	color: var(--red) !important;
+	font-weight: bold;
 }
 #hero-heading {
 	width: 80%;
@@ -112,6 +124,10 @@ body {
 	padding: 10px 20px;
 	font-family: lato-italic;
 	text-transform: uppercase;
+	transition: 0.3s all;
+}
+#hero-heading a:hover {
+	background-color: var(--red);
 }
 #toggle-button {
 	width: 35px;
@@ -199,6 +215,11 @@ body {
 	padding: 10px 20px;
 	font-family: lato-italic;
 	text-transform: uppercase;
+	transition: 0.3s all;
+}
+#gallery-text a:hover {
+	background-color: var(--red);
+	color: var(--gray)
 }
 #gallery-photos {
 	width: 60%;
@@ -211,7 +232,8 @@ body {
 }
 #gallery-photos img {
 	width: 100%;
-	padding: 10px 0px;
+	margin: 10px 0px;
+	box-shadow: rgba(33, 150, 243, 0.5) 0px 8px 24px;
 }
 #about-contact {
 	width: 100%;
@@ -256,6 +278,10 @@ body {
 	font-family: lato-italic;
 	text-transform: uppercase;
 	margin-bottom: 20px;
+	transition: 0.3s all;
+}
+.ac-class a:hover {
+	background-color: var(--red);
 }
 .gradient-border {
 	width: 1px;
@@ -296,6 +322,10 @@ footer {
 	padding: 3px;
 	font-family: lato-regular;
 	text-transform: uppercase;
+	transition: 0.3s all;
+}
+.footer-class ul li a:hover {
+	border-color: var(--blue);
 }
 #copyright {
 	width: 100%;
@@ -310,6 +340,16 @@ footer {
 	font-family: lato-italic;
 	text-align: center;
 	padding: 20px;
+}
+#copyright a {
+	text-decoration: none;
+	color: var(--red);
+	transition: 0.3s all;
+	font-family: lato-regular;
+	border-bottom: 1px solid transparent;
+}
+#copyright a:hover {
+	border-bottom: 1px solid var(--blue);
 }
 
 @media only screen and (max-width: 1024px) {
@@ -331,6 +371,9 @@ footer {
 	#hero-nav ul li {
 		padding: 5px 0px;
 		text-align: center;
+	}
+	#hero-nav ul li:hover {
+		background-color: var(--black);
 	}
 	#logo {
 		padding: 0px;
