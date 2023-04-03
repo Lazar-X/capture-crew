@@ -79,7 +79,7 @@ body {
 #hero-nav ul li a {
 	text-decoration: none;
 	color: var(--gray);
-	font-size: 20px;
+	font-size: 1.25em;
 	font-family: lato-italic;
 	transition: 0.3s all;
 }
@@ -351,6 +351,55 @@ footer {
 #copyright a:hover {
 	border-bottom: 1px solid var(--blue);
 }
+#services {
+	width: 80%;
+	margin: 0px auto;
+	padding: 50px 0px;
+	display: flex;
+	flex-direction: column;
+}
+#services ul {
+	list-style-type: none;
+}
+#services ul li {
+	font-size: 1.25em;
+	padding: 10px;
+	font-family: lato-regular;
+	color: var(--gray);
+}
+.service-heading {
+	width: 100%;
+	margin-top: 100px;
+	background: rgb(244,67,54);
+	background-image: linear-gradient(45deg, rgba(244,67,54,1) 0%, rgba(33,150,243,1) 100%);
+}
+.service-heading h2 {
+	font-size: 1.875em;
+	padding: 15px 0px;
+	text-align: center;
+	font-family: lato-italic;
+	color: var(--black)
+}
+.service-group ul {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid var(--blue);
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.9);
+}
+.service-group ul:hover li {
+	color: var(--blue) !important;
+}
+.services-body-class {
+	width: 100%;
+	background-image: url("../img/bg-image-test1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+
 
 @media only screen and (max-width: 1024px) {
 	#hero-header-overlay {
@@ -439,6 +488,9 @@ footer {
 	.footer-class ul {
 		display: flex;
 		justify-content: space-around;
+	}
+	#services {
+		width: 100%;
 	}
 }
 @media only screen and (max-width: 480px) {
