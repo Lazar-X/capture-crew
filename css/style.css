@@ -398,8 +398,75 @@ footer {
 	background-position: center;
 	background-attachment: fixed;
 }
-
-
+#gallery-main {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 120px 0px;
+	background-color: var(--gray);
+}
+#gallery-main-text {
+	width: 100%;
+	margin: 30px auto;
+	text-align: center;
+	background-image: url("../img/bg-image-test3.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+#gallery-main-text-overlay {
+	width: inherit;
+	display: flex;
+	flex-direction: column;
+	background: rgba(0, 0, 0, 0.9);
+	padding: 30px 0px;
+}
+#gallery-main-text h2 {
+	padding: 30px 20px;
+	font-size: 30px;
+	color: var(--red);
+	font-family: parisienne-regular;
+}
+#gallery-main-text-group {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.gallery-main-text-class {
+	width: 35%;
+}
+#gallery-main-text-group p {
+	font-size: 20px;
+	color: var(--blue);
+	font-family: lato-italic;
+	padding: 0px 10px;
+}
+.gallery-main-images {
+	width: 100%;
+	display: flex;
+}
+.gallery-main-images-section {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.margin-top-100 {
+	margin-top: 100px;
+}
+.gallery-image-class {
+	width: 80%;
+	transition: 0.3s all;
+}
+.gallery-image-class:hover {
+	width: 85%;
+}
+.gallery-image-class img {
+	width: 100%;
+	box-shadow: rgba(33, 150, 243, 0.5) 0px 5px 15px;
+}
 
 @media only screen and (max-width: 1024px) {
 	#hero-header-overlay {
@@ -491,6 +558,29 @@ footer {
 	}
 	#services {
 		width: 100%;
+	}
+	#gallery-main {
+		padding-bottom: 20px;
+	}
+	.gallery-main-text-class {
+		width: 45%;
+	}
+	.gallery-main-images {
+		flex-direction: column;
+	}
+	.gallery-main-images-section {
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+	.gallery-image-class {
+		width: 45%;
+	}
+	.gallery-image-class:hover {
+		width: 50%;
+	}
+	.margin-top-100 {
+		margin: 0px;
 	}
 }
 @media only screen and (max-width: 480px) {

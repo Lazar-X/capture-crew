@@ -1,9 +1,10 @@
 Make about us page
 Make contact page
-Make gallery page
 
 Write meta tags for seo
+Make all photos seo optimized
 Change photos in gallery section on index page
+Change photos on gallery page
 
 Check everything:
 Check responsive!
