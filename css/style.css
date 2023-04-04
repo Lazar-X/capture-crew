@@ -424,7 +424,7 @@ footer {
 }
 #gallery-main-text h2 {
 	padding: 30px 20px;
-	font-size: 30px;
+	font-size: 1.875em;
 	color: var(--red);
 	font-family: parisienne-regular;
 }
@@ -437,7 +437,7 @@ footer {
 	width: 35%;
 }
 #gallery-main-text-group p {
-	font-size: 20px;
+	font-size: 1.25em;
 	color: var(--blue);
 	font-family: lato-italic;
 	padding: 0px 10px;
@@ -466,6 +466,76 @@ footer {
 .gallery-image-class img {
 	width: 100%;
 	box-shadow: rgba(33, 150, 243, 0.5) 0px 5px 15px;
+}
+.bg-gray {
+	background-color: var(--gray) !important;
+}
+#about-us-main {
+	width: 80%;
+	padding-top: 120px;
+	margin: 0px auto;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+#about-us-main h2 {
+	font-size: 1.875em;
+	color: var(--red);
+	font-family: parisienne-regular;
+	margin: 20px 0px;
+}
+#about-us-holder {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#about-us-image {
+	width: 50%;
+}
+#about-us-image img {
+	width: 100%;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#about-us-text {
+	width: 50%;
+	padding: 0px 50px;
+}
+#about-us-text p {
+	font-size: 1.25em;
+	padding: 20px 0px;
+	color: var(--black);
+	font-family: lato-regular;
+}
+.about-h2 {
+	font-size: 1.875em;
+	color: var(--blue);
+	font-family: lato-italic;
+	text-align: center;
+	margin: 50px 0px;
+	padding: 0px 20px;
+	text-transform: uppercase;
+}
+#about-us-workers {
+	width: 80%;
+	margin: 0px auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.person {
+	width: 25%;
+}
+.person h3 {
+	font-size: 1.25em;
+	font-family: lato-regular;
+	color: var(--black)
+}
+.person img {
+	width: 100%;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -496,6 +566,16 @@ footer {
 	}
 	#toggle-button {
 		display: flex;
+	}
+	#about-us-holder {
+		flex-direction: column;
+	}
+	#about-us-image {
+		width: 80%;
+		margin: 20px 0px;
+	}
+	#about-us-text {
+		width: 100%;
 	}
 }
 @media only screen and (max-width: 768px) {
@@ -581,6 +661,16 @@ footer {
 	}
 	.margin-top-100 {
 		margin: 0px;
+	}
+	#about-us-text {
+		padding: 0px;
+	}
+	#about-us-workers {
+		flex-direction: column;
+	}
+	.person {
+		width: 70%;
+		margin: 20px 0px;
 	}
 }
 @media only screen and (max-width: 480px) {
