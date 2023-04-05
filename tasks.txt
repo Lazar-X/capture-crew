@@ -1,3 +1,0 @@
-After publish set can url and sitemap.xml
-
-Delete this file!
