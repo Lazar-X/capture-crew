@@ -1,7 +1,6 @@
 Make all photos seo optimized
 
 Check everything:
-Check responsive!
 Delete every comment!
 
 After publish set can url
