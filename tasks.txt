@@ -1,6 +1,5 @@
 Make all photos seo optimized
 
-Check everything:
-Delete every comment!
+After publish set can url and sitemap.xml
 
-After publish set can url
+Delete this file!
