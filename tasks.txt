@@ -1,8 +1,7 @@
-Write meta tags for seo
 Make all photos seo optimized
-Change photos in gallery section on index page
-Change photos on gallery page
 
 Check everything:
 Check responsive!
 Delete every comment!
+
+After publish set can url
